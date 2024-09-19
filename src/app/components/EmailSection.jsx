@@ -8,36 +8,36 @@ import Image from "next/image";
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     email: e.target.email.value,
+  //     subject: e.target.subject.value,
+  //     message: e.target.message.value,
+  //   };
+  //   const JSONdata = JSON.stringify(data);
+  //   const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+  //   // Form the request for sending data to the server.
+  //   const options = {
+  //     // The method is POST because we are sending data.
+  //     method: "POST",
+  //     // Tell the server we're sending JSON.
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     // Body of the request is the JSON data we created above.
+  //     body: JSONdata,
+  //   };
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+  //   const response = await fetch(endpoint, options);
+  //   const resData = await response.json();
 
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
-  };
+  //   if (response.status === 200) {
+  //     console.log("Message sent.");
+  //     setEmailSubmitted(true);
+  //   }
+  // };
 
   return (
     <section
@@ -54,6 +54,18 @@ const EmailSection = () => {
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
+
+          <br />
+          <br />
+
+        <b>
+           My email id : [sushant.joshi.sde@gmail.com]
+          </b> 
+          <br />
+          <br />
+         <b>
+          My Phone no: [9028868319]
+          </b> 
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
@@ -65,7 +77,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
+        {/* {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
           </p>
@@ -124,7 +136,7 @@ const EmailSection = () => {
               Send Message
             </button>
           </form>
-        )}
+        )} */}
       </div>
     </section>
   );
