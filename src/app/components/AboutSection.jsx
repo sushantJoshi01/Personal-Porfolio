@@ -15,26 +15,6 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
 ];
 
 const AboutSection = () => {
@@ -49,23 +29,33 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.jpeg" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I am uiux designer
+      <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+        {/* Left Side: Image and Text */}
+        <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
+          {/* <Image
+            src="/images/about-image.jpeg"
+            width={300}
+            height={300}
+            alt="About Image"
+            className="rounded-lg shadow-lg"
+          /> */}
+          <h2 className="text-4xl font-bold text-white mt-4">About Me</h2>
+          <p className="text-base lg:text-lg mt-2 text-center md:text-left">
+            I am proficient in UI/UX and frontend design, skilled with Figma, Sketch, HTML, CSS, and Adobe Suite.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+        </div>
+
+        {/* Right Side: Tabs */}
+        <div className="flex flex-col justify-start">
+          <div className="flex space-x-4">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
-           
           </div>
+
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
