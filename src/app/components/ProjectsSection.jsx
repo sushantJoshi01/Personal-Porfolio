@@ -5,8 +5,27 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+
   {
     id: 1,
+    title: "Grocery app",
+    description: "grocery app design ",
+    image: "/images/projects/Grocery.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "https://www.figma.com/design/LDhbVI6Yp76kbJy3SYj3oL/grocery?node-id=0-1&t=lAw6uHEZZkjhciGB-1",
+  },
+  {
+    id: 2,
+    title: "ShoeBox app ",
+    description: "shoeBox app description",
+    image: "/images/projects/Rectangle.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://www.figma.com/design/WLhkDtkiG4mHiODVXf4sK1/shoes-store?t=lAw6uHEZZkjhciGB-1",
+  },
+  {
+    id: 3,
     title: "shoes animation",
     description: "Project 1 description",
     image: "/images/projects/shoes.png",
@@ -16,7 +35,7 @@ const projectsData = [
   },
   
   {
-    id: 2,
+    id: 4,
     title: "car",
     description: "Project 2 description",
     image: "/images/projects/car.png",
@@ -25,7 +44,7 @@ const projectsData = [
     previewUrl: "https://www.figma.com/design/j6NwTPygzl3evmgQNU4IhW/Untitled?m=auto&t=s1Juj9hlBQ0tzAhA-6",
   },
   {
-    id: 3,
+    id: 5,
     title: "Dashboard",
     description: "Project 3 description",
     image: "/images/projects/dash.png",
@@ -34,7 +53,7 @@ const projectsData = [
     previewUrl: "https://www.figma.com/design/pihJP5JjpJ7z5N3LJbLYXO/dshboard?m=auto&t=s1Juj9hlBQ0tzAhA-6",
   },
   {
-    id: 4,
+    id: 6,
     title: "smart home app",
     description: "Project 4 description",
     image: "/images/projects/smart.png",
@@ -43,7 +62,7 @@ const projectsData = [
     previewUrl: "https://www.figma.com/design/j5nB8eu2Lz1w0XnKaDH78B/heath-tracker?m=auto&t=s1Juj9hlBQ0tzAhA-6",
   },
   {
-    id: 5,
+    id: 7,
     title: "chat app",
     description: "Authentication and CRUD operations",
     image: "/images/projects/chat.png",
@@ -52,7 +71,7 @@ const projectsData = [
     previewUrl: "https://www.figma.com/design/AxkvnVNHHUh23RRmPkAdFI/chat?m=auto&t=s1Juj9hlBQ0tzAhA-6",
   },
   {
-    id: 6,
+    id: 8,
     title: "fitness app",
     description: "Project 5 description",
     image: "/images/projects/fit.png",
@@ -61,7 +80,7 @@ const projectsData = [
     previewUrl: "https://www.figma.com/design/j5nB8eu2Lz1w0XnKaDH78B/heath-tracker?m=auto&t=s1Juj9hlBQ0tzAhA-6",
   },
   {
-    id: 7,
+    id: 9,
     title: "social media app",
     description: "Project 5 description",
     image: "/images/projects/insta.png",
@@ -69,24 +88,7 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://www.figma.com/design/moUQwAEf6iObzQW2dNfS5e/instagram?m=auto&t=s1Juj9hlBQ0tzAhA-6",
   },
-  {
-    id: 8,
-    title: "Grocery app",
-    description: "grocery app design ",
-    image: "/images/projects/Rectangle.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "https://www.figma.com/design/LDhbVI6Yp76kbJy3SYj3oL/grocery?node-id=0-1&t=lAw6uHEZZkjhciGB-1",
-  },
-  {
-    id: 9,
-    title: "ShoeBox app ",
-    description: "shoeBox app description",
-    image: "/images/projects/Rectangle (1).png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "https://www.figma.com/design/WLhkDtkiG4mHiODVXf4sK1/shoes-store?t=lAw6uHEZZkjhciGB-1",
-  }
+  
 ];
 
 const ProjectsSection = () => {
