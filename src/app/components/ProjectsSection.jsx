@@ -20,7 +20,7 @@ const projectsData = [
     title: "ShoeBox app ",
     description: "shoeBox app description",
     image: "/images/projects/Rectangle.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "https://www.figma.com/design/WLhkDtkiG4mHiODVXf4sK1/shoes-store?t=lAw6uHEZZkjhciGB-1",
   },
