@@ -14,6 +14,7 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://www.figma.com/design/jI70JKRVmtJ54PyeDJshCq/nike?m=auto&t=s1Juj9hlBQ0tzAhA-6",
   },
+  
   {
     id: 2,
     title: "car",
@@ -67,6 +68,22 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "/",
     previewUrl: "https://www.figma.com/design/moUQwAEf6iObzQW2dNfS5e/instagram?m=auto&t=s1Juj9hlBQ0tzAhA-6",
+  },
+    id: 8,
+    title: "Grocery app",
+    description: "grocery app design ",
+    image: "/images/projects/shoes.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "https://www.figma.com/design/LDhbVI6Yp76kbJy3SYj3oL/grocery?node-id=0-1&t=lAw6uHEZZkjhciGB-1",
+  },
+    id: 9,
+    title: "ShoeBox app ",
+    description: "shoeBox app description",
+    image: "/images/projects/shoes.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://www.figma.com/design/WLhkDtkiG4mHiODVXf4sK1/shoes-store?t=lAw6uHEZZkjhciGB-1",
   }
 ];
 
